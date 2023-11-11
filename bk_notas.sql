@@ -1,0 +1,19 @@
+CREATE TABLE usuario(
+	id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	email NVARCHAR(50) NOT NULL,
+	nombre NVARCHAR(200) NOT NULL,
+	telefono NVARCHAR(30) NULL,
+	[password] VARCHAR(100) NOT NULL,
+	es_admin BIT NOT NULL
+);
+
+
+
+CREATE TABLE notas(
+	id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	titulo NVARCHAR(50) NOT NULL,
+	descripcion NVARCHAR(200) NOT NULL,
+	fecha DATE NOT NULL,
+	usuario_id INT NOT NULL,
+	FOREIGN KEY (usuario_id) REFERENCES usuario(id)
+);

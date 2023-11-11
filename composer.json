@@ -1,0 +1,13 @@
+{
+    "name": "ramon/crudphpsqlserv",
+    "description": "Practica con PHP PDO y SQL Server",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "CrudPhpSqlServ\\App\\": "app/"
+        }
+    }
+}

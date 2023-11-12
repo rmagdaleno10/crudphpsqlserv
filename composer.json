@@ -3,11 +3,13 @@
     "description": "Practica con PHP PDO y SQL Server",
     "type": "project",
     "require": {
-        "vlucas/phpdotenv": "^5.5"
+        "vlucas/phpdotenv": "^5.5",
+        "symfony/routing": "^6.3"
     },
     "autoload": {
         "psr-4": {
-            "CrudPhpSqlServ\\App\\": "app/"
+            "App\\": "app/",
+            "Router\\": "router/"
         }
     }
 }

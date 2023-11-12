@@ -1,6 +1,6 @@
 <?php
 
-namespace CrudPhpSqlServ\App\Models;
+namespace App\Models;
 
 class Task
 {

@@ -1,8 +1,10 @@
 <?php
 
-namespace Config;
-
 use Illuminate\Database\Capsule\Manager as Capsule;
+
+// Variables de entorno
+$dotenv = Dotenv\Dotenv::createImmutable(BASE_DIR);
+$dotenv->load();
 
 $capsule = new Capsule;
 
